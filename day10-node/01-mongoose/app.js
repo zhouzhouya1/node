@@ -76,12 +76,12 @@
     // 查找
     // find 不管查找到多少,返回永远是一个数组. 即便是没找到,也是一个空数组
     // findOne 找到了就返回符合条件的第一条文档对象, 没找到就是null
-    // modelObj.find({ age: 50 }, { username: 1, _id: 0 }, (err, data) => {
-    //   console.log(err, data)
-    // })
-    modelObj.findOne({ age: 18 }, { username: 1, _id: 0 }, (err, data) => {
+    modelObj.find({ age: 50 }, { username: 1, _id: 0 }, (err, data) => {
       console.log(err, data)
     })
+    // modelObj.findOne({ age: 18 }, { username: 1, _id: 0 }, (err, data) => {
+    //   console.log(err, data)
+    // })
 
     // 修改
     // updateOne 只改一条
